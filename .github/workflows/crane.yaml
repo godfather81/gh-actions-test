@@ -1,0 +1,11 @@
+name: crane setup
+
+on: [push, pull_request]
+
+jobs:
+  actioncrane:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: chainguard-actions/setup-crane@main
+      
